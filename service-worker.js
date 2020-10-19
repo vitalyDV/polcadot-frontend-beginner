@@ -33,7 +33,6 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/polcadot-frontend-beginner/index.html"), {
-  
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/polcadot-frontend-beginner/index.html"), {  
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
