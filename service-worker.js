@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/polcadot-frontend-beginner/precache-manifest.39f2edb6f03b49585aec2ff94b48f43f.js"
+  "/polcadot-frontend-beginner/precache-manifest.f74f351ca0c0e14db273ce79aa72ce4b.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,6 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/polcadot-frontend-beginner/index.html"), {  
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/polcadot-frontend-beginner/index.html"), {
+  
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
